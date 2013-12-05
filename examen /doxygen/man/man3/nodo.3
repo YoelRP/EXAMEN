@@ -1,0 +1,133 @@
+.TH "nodo< T, N >" 3 "Thu Dec 5 2013" "Version Jose johel Rodriguez" "Examen estructuras" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+nodo< T, N > \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <nodo\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB~nodo\fP ()"
+.br
+.ti -1c
+.RI "\fBnodo\fP (std::pair< T, N > valor_inicial)"
+.br
+.RI "\fIThis are the constructor of the class nodo\&. \fP"
+.ti -1c
+.RI "\fB~nodo\fP ()"
+.br
+.ti -1c
+.RI "void \fBordenar\fP ()"
+.br
+.ti -1c
+.RI "\fBnodo\fP (std::pair< T, N > nuevo_elemento)"
+.br
+.ti -1c
+.RI "void \fBget_father\fP (\fBnodo\fP< T, N > *padre)"
+.br
+.RI "\fIThis funcion have to add the node to a father if the funcion are a root\&. \fP"
+.ti -1c
+.RI "void \fBprintnodo\fP ()"
+.br
+.RI "\fIprint nodo this funcion print the pair in the node \fP"
+.ti -1c
+.RI "void \fBagregar\fP (const std::pair< T, N > nuevo_elemento)"
+.br
+.RI "\fIThis funcion have to add a anoter weight and element\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "vector< pair< T, N > > \fBparejavect\fP"
+.br
+.ti -1c
+.RI "\fBnodo\fP * \fBfather\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class T, class N>class nodo< T, N >"
+
+.PP
+Definition at line 9 of file nodo\&.cpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class T , class N > \fBnodo\fP< T, N >::~\fBnodo\fP ()"
+*brief thsi funcion is a destroyer of nodo 
+.PP
+Definition at line 22 of file nodo\&.cpp\&.
+.SS "template<class T , class N > \fBnodo\fP< T, N >::\fBnodo\fP (std::pair< T, N >valor_inicial)"
+
+.PP
+This are the constructor of the class nodo\&. \fBParameters:\fP
+.RS 4
+\fIthis\fP need the pair this are the weight and element you want save in the tree 
+.RE
+.PP
+
+.PP
+Definition at line 33 of file nodo\&.cpp\&.
+.SS "template<class T, class N> \fBnodo\fP< T, N >::~\fBnodo\fP ()"
+
+.SS "template<class T, class N> \fBnodo\fP< T, N >::\fBnodo\fP (std::pair< T, N >nuevo_elemento)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class T , class N > void \fBnodo\fP< T, N >::agregar (const std::pair< T, N >nuevo_elemento)"
+
+.PP
+This funcion have to add a anoter weight and element\&. \fBParameters:\fP
+.RS 4
+\fIis\fP the a anoter weight and element and the node to have add this 
+.RE
+.PP
+
+.PP
+Definition at line 67 of file nodo\&.hpp\&.
+.SS "template<class T , class N > void \fBnodo\fP< T, N >::get_father (\fBnodo\fP< T, N > *padre)"
+
+.PP
+This funcion have to add the node to a father if the funcion are a root\&. \fBParameters:\fP
+.RS 4
+\fIthis\fP need who are the father of the node 
+.RE
+.PP
+
+.PP
+Definition at line 82 of file nodo\&.hpp\&.
+.SS "template<class T , class N > void \fBnodo\fP< T, N >::ordenar ()"
+
+.PP
+Definition at line 37 of file nodo\&.hpp\&.
+.SS "template<class T , class N > void \fBnodo\fP< T, N >::printnodo ()"
+
+.PP
+print nodo this funcion print the pair in the node \fBParameters:\fP
+.RS 4
+\fIthis\fP need the node who you want print 
+.RE
+.PP
+
+.PP
+Definition at line 108 of file nodo\&.hpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<class T, class N> \fBnodo\fP* \fBnodo\fP< T, N >::father"
+
+.PP
+Definition at line 18 of file nodo\&.hpp\&.
+.SS "template<class T, class N> vector< pair <T,N> > \fBnodo\fP< T, N >::parejavect"
+
+.PP
+Definition at line 15 of file nodo\&.hpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Examen estructuras from the source code\&.
